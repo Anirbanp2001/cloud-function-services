@@ -1,0 +1,18 @@
+{
+  "name": "on-user-inserted",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@getbrevo/brevo": "^6.0.2",
+    "@google-cloud/functions-framework": "^5.0.5",
+    "dotenv": "^17.4.2",
+    "firebase-admin": "^14.2.0"
+  }
+}
