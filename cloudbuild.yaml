@@ -1,0 +1,15 @@
+steps:
+  # --- Function 1 Deployment ---
+  - name: 'gcr.io/://google.com'
+    id: 'deploy-user-creation'
+    args:
+      - 'gcloud'
+      - 'functions'
+      - 'deploy'
+      - 'user-creation-action'             # The live function name in GCP
+      - '--gen2'                            # Ensures it deploys as a Cloud Run function (v2)
+      - '--runtime=nodejs20'
+      - '--region=asia-south2'
+      - '--source=./functions/on-user-inserted' # Path to this specific subfolder
+      - '--entry-point=onUserInserted'      # The function name exported in your index.js
+      - '--trigger-http' 
