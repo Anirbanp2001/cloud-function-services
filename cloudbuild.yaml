@@ -13,3 +13,6 @@ steps:
       - '--source=./functions/on-user-inserted' # Path to this specific subfolder
       - '--entry-point=onUserInserted'      # The function name exported in your index.js
       - '--trigger-http' 
+
+options:
+  logging: CLOUD_LOGGING_ONLY
