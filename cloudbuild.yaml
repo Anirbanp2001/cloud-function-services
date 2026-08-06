@@ -7,7 +7,7 @@ steps:
       - 'deploy'
       - 'user-creation-action'
       - '--gen2'
-      - '--runtime=nodejs20'
+      - '--runtime=nodejs22'
       - '--region=asia-south2'
       - '--source=./functions/on-user-inserted'
       - '--entry-point=onUserInserted'
