@@ -12,6 +12,6 @@ steps:
       - '--source=./functions/on-user-inserted'
       - '--entry-point=onUserInserted'
       - '--trigger-http'
-      - '--set-secrets=API_KEY=my-api-key:latest'
+      - '--set-secrets=BREVO_API_KEY=my-api-key:latest'
 options:
   logging: CLOUD_LOGGING_ONLY
