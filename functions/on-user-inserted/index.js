@@ -3,8 +3,9 @@ const brevo = require('@getbrevo/brevo')
 const admin = require('firebase-admin')
 
 admin.initializeApp()
-const apiInstance = new brevo.TransactionalEmailsApi()
-apiInstance.setApiKey(brevo.TransactionalEmailsApiApiKeys.apiKey, process.env.BREVO_API_KEY);
+console.log(brevo);
+const apiInstance = new brevo.BrevoClient({apiKey : process.env.BREVO_API_KEY});
+
 async function sendVerificationEmail(toEmail, link) {
   const email = new brevo.SendSmtpEmail();
   email.sender = { name: 'Loadframe', email: 'noreply@yourdomain.com' };
