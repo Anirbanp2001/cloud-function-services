@@ -11,7 +11,7 @@ steps:
       - '--region=asia-south2'
       - '--source=./functions/on-user-inserted'
       - '--entry-point=onUserInserted'
-      - '--trigger-http'
+      - '--trigger-topic=user-inserted'
       - '--set-secrets=API_KEY=BREVO_API_KEY:latest'
 options:
   logging: CLOUD_LOGGING_ONLY
