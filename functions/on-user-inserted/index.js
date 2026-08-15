@@ -6,7 +6,7 @@ admin.initializeApp()
 console.log('firebase-admin version:', require('firebase-admin/package.json').version);
 console.log('admin keys:', Object.keys(admin));
 console.log('typeof admin.auth:', typeof admin.auth);
-console.log(brevo);
+// console.log(brevo);
 const apiInstance = new brevo.BrevoClient({apiKey : process.env.BREVO_API_KEY});
 
 async function sendVerificationEmail(toEmail, link) {
