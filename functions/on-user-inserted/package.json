@@ -13,6 +13,6 @@
     "@getbrevo/brevo": "^6.0.2",
     "@google-cloud/functions-framework": "^5.0.5",
     "dotenv": "^17.4.2",
-    "firebase-admin": "^14.2.0"
+    "firebase-admin": "14.2.0"
   }
 }
